@@ -28,10 +28,9 @@ jobs:
         run: |
           wget https://github.com/instrumenta/kubeval/releases/latest/download/kubeval-linux-amd64.tar.gz
           tar xf kubeval-linux-amd64.tar.gz
-          sudo cp kubeval /usr/local/bin
+          sudo mv kubeval /usr/local/bin
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: |
-           pwd
-           ls -la
+        run: kubeval -d .
+
