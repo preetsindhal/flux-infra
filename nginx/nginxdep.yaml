@@ -4,6 +4,7 @@ metadata:
   labels:
     app: nginx-github
   name: nginx-github
+  env: test
 spec:
   replicas: 1
   selector:
