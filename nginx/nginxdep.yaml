@@ -1,10 +1,10 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Dep
 metadata:
   labels:
     app: nginx-github
   name: nginx-github
-  env: test
+  env: testing
 spec:
   replicas: 1
   selector:
