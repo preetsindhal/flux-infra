@@ -1,5 +1,5 @@
 apiVersion: apps/v1
-kind: Dep
+kind: Deployment
 metadata:
   labels:
     app: nginx-github
